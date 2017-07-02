@@ -10,6 +10,8 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { HeroListComponent } from './components/home-page/hero-list/hero-list.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import {HeroService} from "./services/hero.service";
+import {InMemoryWebApiModule} from "angular-in-memory-web-api";
+import {InMemoryDataService} from "./in-memory-data.service";
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import {HeroService} from "./services/hero.service";
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]
