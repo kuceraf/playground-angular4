@@ -9,6 +9,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { HeroListComponent } from './components/home-page/hero-list/hero-list.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import {HeroService} from "./services/hero.service";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [HeroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
