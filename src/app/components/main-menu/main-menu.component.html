@@ -6,15 +6,18 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item" appHighlight [highlightColor] = 'highlightColor'>
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Disabled</a>
+        <a class="nav-link" href="#">Admin</a>
       </li>
     </ul>
   </div>
 </nav>
+
+<h1>My First Attribute Directive</h1>
+<!--<p appHighlight>Highlight me!</p>-->

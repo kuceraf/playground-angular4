@@ -12,4 +12,9 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
   }
 
+  onInputEvent({target}): void {
+    console.log(target);
+    // const inputElement: HTMLInputElement =  <HTMLInputElement>event.target;
+    // inputElement.disabled = true;
+  }
 }
