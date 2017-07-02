@@ -3,12 +3,13 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/observable/throw';
 import {Hero} from '../components/home-page/hero-list/hero-list.component';
 
 
 @Injectable()
 export class HeroService {
-  private heroesUrl = 'api/heroes';  // URL to web API
+  private heroesUrl = 'api/heroess';  // URL to web API
 
   constructor(private http: Http) {
   }

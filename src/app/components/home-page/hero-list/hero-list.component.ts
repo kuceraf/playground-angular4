@@ -18,6 +18,7 @@ export class HeroListComponent implements OnInit {
 
   getHeroes() {
     this.heroService.getHeroes()
+      // subscription of the cold Observable
       .subscribe(
         heroes => this.heroes = heroes,
         error =>  this.errorMessage = <any>error);
